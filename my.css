@@ -1,0 +1,83 @@
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-gap: 10px;
+        background-color: hsl(207, 90%, 54%);
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .grid-container2 >div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: left;
+        padding: 20px 0;
+        grid-gap: 10px;
+      }
+  
+      .category{        
+          font-family: Arial, sans-serif;
+          font-size: 25px;
+      }
+      .productName{
+          font-family: 'Trebuchet MS', sans-serif;
+          font-size: 40px;
+      }
+      
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+      
+      input[type=number] {
+        width: 100px;
+        padding: 4px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+
+      .myBtnGrp {
+        box-shadow:inset 0px 1px 0px 0px #ffffff;
+        background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+        background-color:#ffffff;
+        border-radius:6px;
+        border:1px solid #dcdcdc;
+        display:inline-block;
+        cursor:pointer;
+        color:#666666;
+        font-family:Arial;
+        font-size:12px;
+        font-weight:bold;
+        padding:6px 20px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #ffffff;
+      }
+      .myBtnGrp:hover {
+        background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+        background-color:#f6f6f6;
+      }
+      .myBtnGrp:active {
+        position:relative;
+        top:1px;
+      }
+        
+      .myButton {
+      background-color:#1a1919;
+      border-radius:3px;
+      border:1px solid #1a1919;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:13px;
+      padding:7px 24px;
+    }
+    .myButton:hover {
+      background-color:#3b3a3a;
+    }
+  
+    .dpPrice {
+        color: red;
+        font-weight: bold;
+        font-size :17px;
+      }

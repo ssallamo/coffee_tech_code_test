@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="myscript.js"></script>
+  <link  rel="stylesheet" href="my.css">
+</head>
+<body>
+
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-6">
+          <img src="coffee-anais.jpg">
+      </div>
+      <div class="col-sm-9 col-md-6">
+          <div>
+                <p class="category">Anais Reserve Lots For Espresso & Milk Coffee</p><br>
+                <p class="productName">ALCA 2020 GOLD AWARD WINNING COFFEE</p>
+                <img src="aica-gold-2020-200x200.jpg"><br><br>
+                <h4>Espresso GOLD MEDAL WINNER 2020</h4><br><br><br>
+                <h4>Size</h4>
+                <button type="button" class="myBtnGrp" onClick=selPdt(1000);>1Kg</button>
+                <button type="button" class="myBtnGrp" onClick=selPdt(2000);>2Kg</button>
+                <button type="button" class="myBtnGrp" onClick=selPdt(3000);>3Kg</button>
+                <button type="button" class="myBtnGrp" onClick=selPdt(200);>200g</button>                
+                <input type="input" id="hdnprc" hidden>
+                <br><br><hr><br>
+                <span class="dpPrice" id="totPrc"> NZD12.90 </span>
+                <span id="calGstPrc"> + GST, inc. GST is NZD 14.84</span>
+                <div>
+                    <input type="number" id="qty" value=1 min=1 onChange=changeQty();>
+                    <button type="button" class="myButton">ADD TO CART</button>
+                </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
