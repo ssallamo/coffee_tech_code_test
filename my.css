@@ -36,29 +36,24 @@
         box-sizing: border-box;
       }
 
-      .myBtnGrp {
-        box-shadow:inset 0px 1px 0px 0px #ffffff;
-        background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-        background-color:#ffffff;
-        border-radius:6px;
-        border:1px solid #dcdcdc;
-        display:inline-block;
-        cursor:pointer;
-        color:#666666;
+
+      .myBtnGrp{
+        position: relative;
+        color: #5f6368;
+        border: solid 1px #dadce0;
+        border-radius: 6px;
+        display: inline-block;
+        padding: 6px 8px 6px 8px; 
+        cursor: pointer;
         font-family:Arial;
         font-size:12px;
+      }
+      
+      .clicked_myBtnGrp{
+        color: ;border-color: #000308;
+        color: #4c4d50;
+        background: #e9f1fe;
         font-weight:bold;
-        padding:6px 20px;
-        text-decoration:none;
-        text-shadow:0px 1px 0px #ffffff;
-      }
-      .myBtnGrp:hover {
-        background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-        background-color:#f6f6f6;
-      }
-      .myBtnGrp:active {
-        position:relative;
-        top:1px;
       }
         
       .myButton {

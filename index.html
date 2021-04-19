@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Coffee Tech Code Test</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-3 col-md-6">
-          <img src="coffee-anais.jpg">
+          <a href="coffee-anais.jpg"><img src="coffee-anais.jpg"></a>
       </div>
       <div class="col-sm-9 col-md-6">
           <div>
@@ -25,20 +25,21 @@
                 <p class="productName">ALCA 2020 GOLD AWARD WINNING COFFEE</p>
                 <img src="aica-gold-2020-200x200.jpg"><br><br>
                 <h4>Espresso GOLD MEDAL WINNER 2020</h4><br><br><br>
-                <h4>Size</h4>
+
+                <h4>Size</h4>                
                 <button type="button" class="myBtnGrp" onClick=selPdt(1000);>1Kg</button>
                 <button type="button" class="myBtnGrp" onClick=selPdt(2000);>2Kg</button>
                 <button type="button" class="myBtnGrp" onClick=selPdt(3000);>3Kg</button>
-                <button type="button" class="myBtnGrp" onClick=selPdt(200);>200g</button>                
-                <input type="input" id="hdnprc" hidden>
-                <br><br><hr><br>
-                <span class="dpPrice" id="totPrc"> NZD12.90 </span>
-                <span id="calGstPrc"> + GST, inc. GST is NZD 14.84</span>
-                <div>
-                    <input type="number" id="qty" value=1 min=1 onChange=changeQty();>
-                    <button type="button" class="myButton">ADD TO CART</button>
-                </div>
+                <button type="button" class="myBtnGrp" onClick=selPdt(200);>200g</button> 
+                <input type="input" id="hdnprc" hidden >
 
+                <br><br><hr><br>
+                <span class="dpPrice" id="totPrc"> </span>
+                <span id="calGstPrc"></span>
+                <div>
+                  <input type="number" id="qty" value=1 min=1 onChange=changeQty();>
+                  <button type="button" class="myButton">ADD TO CART</button>
+                </div>
           </div>
       </div>
     </div>

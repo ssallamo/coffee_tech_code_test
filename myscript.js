@@ -11,7 +11,7 @@ function selPdt(pdt){
     }
     
     calGstPrc = (prc*1.15).toFixed(2);
-    document.getElementById("totPrc").innerHTML ="NZD "+prc;
+    document.getElementById("totPrc").innerHTML ="NZD "+prc.toFixed(2);
     document.getElementById("calGstPrc").innerHTML ="+ GST, inc. GST is NZD "+calGstPrc;
     document.getElementById("hdnprc").value = prc;
 }
@@ -27,3 +27,16 @@ function changeQty(){
     document.getElementById("totPrc").innerHTML ="NZD "+totPrc;
     document.getElementById("calGstPrc").innerHTML ="+ GST, inc. GST is NZD "+calGstPrc;
 }
+
+/* JQuary */
+$(document).ready(function(){      
+    $('.myBtnGrp').each(function(index){
+        $(this).attr('btnGrp-idx', index);             
+        $('.myBtnGrp[btnGrp-idx=3]').addClass('clicked_myBtnGrp');
+        selPdt(200); //set default price
+    }).click(function(){
+      var index = $(this).attr('btnGrp-idx');       
+      $('.myBtnGrp[btnGrp-idx=' + index + ']').addClass('clicked_myBtnGrp');
+      $('.myBtnGrp[btnGrp-idx!=' + index + ']').removeClass('clicked_myBtnGrp');
+    });
+});
