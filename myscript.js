@@ -28,6 +28,20 @@ function changeQty(){
     document.getElementById("calGstPrc").innerHTML ="+ GST, inc. GST is NZD "+calGstPrc;
 }
 
+function addCart(){
+    var pdt = document.getElementById("hdnprc").value;   
+    var qty = document.getElementById("qty").value;   
+    var pdtDtl;
+    switch (pdt){
+        case 121.50: pdtDtl = "1Kg"; break;
+        case 221.50: pdtDtl = "2Kg"; break;
+        case 321.50: pdtDtl = "3Kg"; break;
+        default  : pdtDtl =  "200g"; break;
+    } 
+    document.getElementById("showAddCart").innerHTML = pdtDtl+" Coffee Beens "+ qty +" Pack ";
+
+}
+
 /* JQuary */
 $(document).ready(function(){      
     $('.myBtnGrp').each(function(index){
@@ -39,4 +53,10 @@ $(document).ready(function(){
       $('.myBtnGrp[btnGrp-idx=' + index + ']').addClass('clicked_myBtnGrp');
       $('.myBtnGrp[btnGrp-idx!=' + index + ']').removeClass('clicked_myBtnGrp');
     });
+
+    
+  $('#myButton').click(function(){
+    $('.toast').toast({delay: 2000});
+    $('.toast').toast('show');
+  });
 });

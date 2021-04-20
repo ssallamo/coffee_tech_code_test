@@ -76,3 +76,9 @@
         font-weight: bold;
         font-size :17px;
       }
+
+.toast{
+  position: absolute; 
+  top: 0; 
+  right:0;
+}
